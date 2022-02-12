@@ -23,6 +23,6 @@ jobs:
         run: |
           git config --global user.email "fbk@hll.localhost"
           git config --global user.name "fbk"
-          chmod +x autorun.sh && ./autorun.sh
+          chmod +x exec_grabber.sh && ./exec_grabber.sh
           git commit -m "./youtubeLink.txt is updated."
           git push
