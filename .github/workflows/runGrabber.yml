@@ -1,21 +1,25 @@
-# This is a basic workflow to help you get started with Actions
-
 name: LinkGrabber
 
-# Controls when the action will run. 
 on:
   schedule:
     - cron: '*/60 * * * *'
+
   pull_request:
     branches: [ main ]
 
+  workflow_dispatch:
 jobs:
+
   runCode:
+
     runs-on: ubuntu-latest
+
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: config
+
+      - name: Grab Link
+
         run: |
           chmod +x autorun.sh && ./autorun.sh
           git commit -m "./youtubeLink.txt is updated."
