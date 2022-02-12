@@ -21,6 +21,8 @@ jobs:
       - name: Grab Link
 
         run: |
+          git config --global user.email "fbk@hll.localhost"
+          git config --global user.name "fbk"
           chmod +x autorun.sh && ./autorun.sh
           git commit -m "./youtubeLink.txt is updated."
           git push
