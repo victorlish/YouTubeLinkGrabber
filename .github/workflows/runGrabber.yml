@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       - name: Grab Link
@@ -24,5 +23,6 @@ jobs:
           git config --global user.email "fbk@hll.localhost"
           git config --global user.name "fbk"
           chmod +x exec_grabber.sh && ./exec_grabber.sh
+          git add -A
           git commit -m "./youtubeLink.txt is updated."
           git push
