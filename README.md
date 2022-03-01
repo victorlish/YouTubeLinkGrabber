@@ -8,7 +8,7 @@ Play YouTube live using IPTV app. That's it.
 1. Put YouTube live link into `YouTubeLink.txt` with the following format
 ```
 Channel Name - Language
-https://www.youtube.com/watch?v=dQw4w9WgXcQ
+https://www.youtube.com/watch?v=V9KZGs1MtP4
 ```
 2. Run the cron job in GitHub
 3. Put the link `https://raw.githubusercontent.com/<username>/YouTubeLinkGrabber/youtube.m3u` to your IPTV app.
